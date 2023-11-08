@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Remembering Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+
+<body class="flex  justify-center items-center h-screen bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+    <div class=" w-[29rem] p-10 bg-white rounded-2xl shadow-xl mx-4">
+        <h1 class="text-5xl mb-6 ">Numero</h1>
+
+        <div class="">
+            <label for="numberOfDigits" class="block mb-1.5 text-gray-600">Number of digits to display:</label>
+            <input id="numberOfDigits" type="number" class="w-full p-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500 placeholder-gray-400">
+        </div>
+
+        <div id="numberDisplay" class="text-4xl font-bold mb-6 text-center"></div>
+        <div class="mb-4">
+            <label for="userInput" class="block mb-2 text-gray-600">Your Guess:</label>
+            <input id="userInput" type="number" class="w-full p-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500 placeholder-gray-400">
+        </div>
+        <button id="checkButton" class="w-full bg-black hover:bg-gray-700 text-white py-2 rounded-full focus:outline-none focus:ring focus:border-blue-300 transition duration-300">Submit</button>
+        <div id="resultDisplay" class="text-xl font-bold mt-4 text-center"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
