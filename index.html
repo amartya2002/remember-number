@@ -6,25 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Remembering Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
    
 </head>
 
-<body class="flex  justify-center items-center h-screen bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-    <div class=" w-[29rem] p-10 bg-white rounded-2xl shadow-xl mx-4">
-        <h1 class="text-5xl mb-6 ">Numero</h1>
+<body class="boxes-pattern bg-black flex  justify-center items-center h-screen">
+    <div class=" border-t border-yellow-600 w-[29rem] p-10 bg-gradient-to-br from-[#151515] to-black rounded-xl shadow-xl mx-4">
+        <h1 class="mb-4 text-5xl font-semibold bg-gradient-to-r from-[#efefef] to-[#5f5f5f] bg-clip-text text-transparent ">Numero..</h1>
 
         <div class="">
-            <label for="numberOfDigits" class="block mb-1.5 text-gray-600">Number of digits to display:</label>
-            <input id="numberOfDigits" type="number" class="w-full p-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500 placeholder-gray-400">
+            <label for="numberOfDigits" class="block  font-regular mb-4 text-gray-400">Number of digits to display:</label>
+            <input id="numberOfDigits" type="text" class="text-gray-300 bg-black placeholder-gray-400 shadow-sm rounded-full    focus:outline-none focus:ring 
+            w-full px-4 py-3 text-sm  transition ">
         </div>
 
-        <div id="numberDisplay" class="text-4xl font-bold mb-6 text-center"></div>
-        <div class="mb-4">
-            <label for="userInput" class="block mb-2 text-gray-600">Your Guess:</label>
-            <input id="userInput" type="number" class="w-full p-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-500 placeholder-gray-400">
+        <div class=" w-full h-6 my-2   p-2">
+            <p id="numberDisplay" class="text-xl text-gray-400 font-semibold justify-center items-center flex  "></p>
         </div>
-        <button id="checkButton" class="w-full bg-black hover:bg-gray-700 text-white py-2 rounded-full focus:outline-none focus:ring focus:border-blue-300 transition duration-300">Submit</button>
-        <div id="resultDisplay" class="text-xl font-bold mt-4 text-center"></div>
+        
+
+        <div class="mb-4  " >
+            <label  for="userInput" class="block font-regular mb-4 text-gray-400">Your Guess:</label>
+            <input id="userInput" type="text" class="text-gray-300 bg-black placeholder-gray-400 shadow-sm rounded-full    focus:outline-none focus:ring 
+            w-full px-4 py-3 text-sm  transition">
+        </div>
+        <button id="checkButton" class="w-full bg-gradient-to-br from-[#7052ff] to-yellow-500 hover:scale-105 duration-200 text-white py-2 rounded-full focus:outline-none focus:ring focus:border-blue-300 transition duration-300">Submit &#10147;</button>
+
+        <!-- <div id="resultDisplay" class="text-xl font-bold mt-4 text-center text-white"></div>
+    </div> -->
+
+    <div class="w-full h-6 mt-5   p-2">
+        <p id="resultDisplay" class="text-xl text-gray-400 font-semibold justify-center items-center flex  "></p>
     </div>
 
     <script src="script.js"></script>
